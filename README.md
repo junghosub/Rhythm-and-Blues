@@ -1,4 +1,4 @@
-# Rhythm-and-Blues
+# Algoryhythm
 자료구조 및 알고리즘
 
 21.08.31~
