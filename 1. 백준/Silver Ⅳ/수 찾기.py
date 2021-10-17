@@ -14,12 +14,25 @@ def binray_search(a, key):
         if a[pc] == key: # pc와 찾고자 하는 값이 같으면 cnt = 1
             return 1
         elif a[pc] < key: # pc가 찾고자 하는 값보다 작다면 검색 범위를 뒤쪽으로
-            pl = pc + 1
+            pl = pc+1
         else:
-            pr = pc -1 # pc가 찾고자 하는 값보다 크다면 검색 범위를 앞쪽으로
+            pr = pc-1 # pc가 찾고자 하는 값보다 크다면 검색 범위를 앞쪽으로
         if pl > pr:
             break
     return 0
 
 for i in b:
     print(binray_search(a, i))
+
+
+# set 자료형을 사용
+
+n = int(input())
+a = set(map(int, input().split()))
+
+m = int(input())
+b = list(map(int, input().split()))
+
+for i in b:
+    print(1 if i in a else 0)
+
